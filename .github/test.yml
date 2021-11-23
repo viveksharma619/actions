@@ -1,7 +1,7 @@
 name: test 
-
-on: [push]
-
+on: push
 jobs:
   print-text:
-    run: echo "hello world"
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "hello world"
