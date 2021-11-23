@@ -1,5 +1,7 @@
 name: test 
-on: push
+on: 
+  repository_dispatch:
+    types: [build]
 jobs:
   print-text:
     runs-on: ubuntu-latest
