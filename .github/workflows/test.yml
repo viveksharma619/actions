@@ -4,4 +4,5 @@ jobs:
   print-text:
     runs-on: ubuntu-latest
     steps:
-      run: echo "hello world"
+      - name: print stuff
+        run: echo "Hello world"
