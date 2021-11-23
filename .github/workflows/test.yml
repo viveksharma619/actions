@@ -4,11 +4,12 @@ jobs:
   print-text:
     runs-on: ubuntu-latest
     steps:
+      - name: print stuff
+        run: echo $GITHUB_WORKSPACE
       - name: Checkout
         uses: actions/checkout@v2.4.0
-      - name: print stuff
-        run: echo "Hello world"
       - name: print directory
         run : |
             pwd
             ls -a
+            echo $GITHUB_WORKSPACE
