@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: print stuff
         run: echo "Hello world"
+      - name: print directory
+        run : |
+            pwd
+            ls -a
