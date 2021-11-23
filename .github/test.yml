@@ -1,0 +1,7 @@
+name: test 
+
+on: push
+
+jobs:
+  print-text:
+    run: echo "hello world"
